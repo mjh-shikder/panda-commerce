@@ -1,0 +1,52 @@
+/* shared css */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-parent {
+    position: relative;
+}
+
+.search-parent input {
+    border-radius: 66px;
+    padding: 15px 30px;
+    width: 500px;
+    background: rgb(241, 241, 241);
+    border: none;
+}
+
+.search-parent i {
+    position: absolute;
+    top: 17px;
+    right: 25px;
+    color: #BABABA;
+
+}
+
+.nva-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nva-links a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
