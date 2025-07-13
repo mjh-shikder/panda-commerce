@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
-    
+
     <!-- favicon -->
-     <link rel="shortcut icon" href="./images/fav.png" type="image/favicon">
+    <link rel="shortcut icon" href="./images/fav.png" type="image/favicon">
 
     <!-- font awesome CDN⬇️ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- style.cssfile -->
-         <link rel="stylesheet" href="./style.css">
-         
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- style.cssfile -->
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
-<h2></h2>
 
-<body>
+
+<body class="inter-font">
     <main>
+        <!-- Nav -->
         <nav class="container">
-            <figure>
-            <img src="./images/logo.png" alt="Panda Commerce Logo" /></figure>
+            <!-- <figure> -->
+            <img src="./images/logo.png" alt="Panda Commerce Logo" />
+            <!-- </figure> -->
             <div class="search-parent">
                 <input type="text" placeholder="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -35,9 +44,25 @@
                 <li><a href="">Product</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact</a></li>
-                
+
             </ul>
         </nav>
+
+        <!-- Banner -->
+        <section class="banner container">
+            <!-- banner left -->
+            <div>
+                <h2>Mi LED TV 4A PRO 32</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam quo qui sequi iure alias,
+                    eum in commodi necessitatibus suscipit, corporis magni ex natus maxime ratione reiciendis
+                    repellendus similique accusamus.</p>
+                <h2 class="price">$1289</h2>
+                <button class="btn-primary">BUY NOW <i class="fa-solid fa-arrow-right"></i></button>
+                <!-- banner right -->
+            </div>
+            <img src="./images/banner-images/tv.png" alt="">
+
+        </section>
     </main>
 </body>
 

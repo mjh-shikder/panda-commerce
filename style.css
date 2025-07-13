@@ -6,17 +6,47 @@
 .container {
     max-width: 1280px;
     margin: auto;
-    
+
+}
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn-primary {
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 15px 25px;
+    border: none;
+}
+
+body{
+    background-color: #feeae9;
 }
 
 /* Nav bar */
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: #fffafa;
+    padding: 9px 50px;
+    border-radius: 15px;
+    align-items: center;
 }
 
+nav figure{
+    /* margin: 0px; */
+}
 .search-parent {
     position: relative;
+    margin: 0px;
 }
 
 .search-parent input {
@@ -28,21 +58,24 @@ nav {
 }
 
 .search-parent i {
-    position: absolute;
-    top: 17px;
-    right: 25px;
+    /* position: absolute; */
+    /* top: 6px; */
+    /* right: 25px; */
     color: #BABABA;
+    background-color: #ebebeb;
+    border-radius: 100px;
+    padding: 10px;
 
 }
 
-.nva-links{
+.nva-links {
     display: flex;
     list-style: none;
     gap: 20px;
-    
+
 }
 
-.nva-links a{
+.nva-links a {
     text-decoration: none;
     color: #707070;
     font-size: 16px;
@@ -50,3 +83,44 @@ nav {
 
 
 }
+
+/* banner */
+.banner {
+    display: flex;
+    background-color: #fffafa;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.banner h2 {
+    color: rgb(36, 36, 36);
+    font-size: 56px;
+    font-weight: 700;
+
+}
+
+.banner p {
+    color: #4E4E4E;
+    width: 600px;
+
+}
+
+.price {
+    color: #FF136F;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+
+
+.banner img {
+    width: 402px;
+    height: 378px;
+    border-radius: 10px;
+
+    }
+
