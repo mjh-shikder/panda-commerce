@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panda Commerce</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./images/fav.png" type="image/favicon">
+    <link rel="shortcut icon" href="./images/fav.png" type="image/favicon" />
 
     <!-- font awesome CDN⬇️ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- style.cssfile -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-</head>
+  <body class="inter-font">
+    <header class="">
+      <!-- Nav -->
+      <nav class="container">
+        <!-- <figure> -->
+        <img src="./images/logo.png" alt="Panda Commerce Logo" />
+        <!-- </figure> -->
+        <div class="search-parent">
+          <input type="text" placeholder="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="nva-links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
 
-
-
-<body class="inter-font">
+      <!-- Banner -->
+      <section class="banner container">
+        <!-- banner left -->
+        <div>
+          <h2>Mi LED TV 4A PRO 32</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            numquam quo qui sequi iure alias, eum in commodi necessitatibus
+            suscipit, corporis magni ex natus maxime ratione reiciendis
+            repellendus similique accusamus.
+          </p>
+          <h2 class="price">$1289</h2>
+          <button class="btn-primary">
+            BUY NOW <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <!-- banner right -->
+        </div>
+        <img src="./images/banner-images/tv.png" alt="" />
+      </section>
+    </header>
     <main>
-        <!-- Nav -->
-        <nav class="container">
-            <!-- <figure> -->
-            <img src="./images/logo.png" alt="Panda Commerce Logo" />
-            <!-- </figure> -->
-            <div class="search-parent">
-                <input type="text" placeholder="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <ul class="nva-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact</a></li>
-
-            </ul>
-        </nav>
-
-        <!-- Banner -->
-        <section class="banner container">
-            <!-- banner left -->
-            <div>
-                <h2>Mi LED TV 4A PRO 32</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam quo qui sequi iure alias,
-                    eum in commodi necessitatibus suscipit, corporis magni ex natus maxime ratione reiciendis
-                    repellendus similique accusamus.</p>
-                <h2 class="price">$1289</h2>
-                <button class="btn-primary">BUY NOW <i class="fa-solid fa-arrow-right"></i></button>
-                <!-- banner right -->
-            </div>
-            <img src="./images/banner-images/tv.png" alt="">
-
-        </section>
+      <section class="bg-white py-8">
+        <h1>Categories</h1>
+        <div class="flex gap-5 w-full items-center">
+          <div class="flex bg-orange-600 text-white p-5 rounded-lg h-15  w-[359px] justify-between">
+            <h2>Watch</h2>
+            <img
+              class=""
+              src="./images/categories/watch.png"
+              alt="watch image"
+            />
+          </div>
+          <div class="flex bg-pink-600 text-white p-5 rounded-lg h-15 w-[359px] justify-between">
+            <h2>Bag</h2>
+            <img src="./images/categories/bag.png" alt="bag image" />
+          </div>
+          <div class="flex bg-blue-600 text-white p-5 rounded-lg h-15 w-[359px] justify-between">
+            <h2>Shoes</h2>
+            <img src="./images/categories/shoes.png" alt="shoesimage" />
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
