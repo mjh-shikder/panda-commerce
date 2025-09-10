@@ -25,74 +25,65 @@
       rel="stylesheet"
     />
 
-    <!-- tailwind css -->
+    <!-- Tailwind and Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- style.cssfile -->
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-
+  <!-- Body Start -->
   <body class="inter-font">
-    <header class="">
-      <!-- Nav -->
-      <nav class="container">
-        <!-- <figure> -->
-        <img src="./images/logo.png" alt="Panda Commerce Logo" />
-        <!-- </figure> -->
-        <div class="search-parent">
-          <input type="text" placeholder="search" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <ul class="nva-links">
-          <li><a href="">Home</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Banner -->
-      <section class="banner container">
-        <!-- banner left -->
+    <header class="md:w-10/12 w-11/12 mx-auto mt-5">
+      <nav class="flex justify-between items-center md:bg-gray-100 md:px-6 py-2 rounded-xl">
         <div>
-          <h2>Mi LED TV 4A PRO 32</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            numquam quo qui sequi iure alias, eum in commodi necessitatibus
-            suscipit, corporis magni ex natus maxime ratione reiciendis
-            repellendus similique accusamus.
-          </p>
-          <h2 class="price">$1289</h2>
-          <button class="btn-primary">
-            BUY NOW <i class="fa-solid fa-arrow-right"></i>
+          <img class="w-28 md:w-32" src="images/logo.png" alt="brand-logo" />
+        </div>
+        <div>
+          <div class="w-44 md:w-80">
+            <fieldset class="fieldset">
+              <input
+                type="text"
+                class="input rounded-full"
+                placeholder="Search"
+              />
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="md:space-x-6 hidden md:flex">
+          <a href="./index.html">Home</a>
+          <a href="./index.html">Product</a>
+          <a href="./index.html">About Us</a>
+          <a href="./index.html">Contact Us</a>
+        </div>
+
+        <div class="md:hidden">
+          <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+          <button
+            class="btn  "
+            popovertarget="popover-1"
+            style="anchor-name: --anchor-1"
+          >
+            <i class="fa-solid fa-bars "></i>
           </button>
-          <!-- banner right -->
+          <ul
+            class="dropdown dropdown-end menu w-52 rounded-box bg-base-100 shadow-sm"
+            popover
+            id="popover-1"
+            style="position-anchor: --anchor-1"
+          >
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Product</a></li>
+            <li><a href="./index.html">About Us</a></li>
+            <li><a href="./index.html">Contact Us</a></li>
+          </ul>
         </div>
-        <img src="./images/banner-images/tv.png" alt="" />
-      </section>
+      </nav>
     </header>
-    <main>
-      <section class="bg-white py-8">
-        <h1>Categories</h1>
-        <div class="flex gap-5 w-full items-center">
-          <div class="flex bg-orange-600 text-white p-5 rounded-lg h-15  w-[359px] justify-between">
-            <h2>Watch</h2>
-            <img
-              class=""
-              src="./images/categories/watch.png"
-              alt="watch image"
-            />
-          </div>
-          <div class="flex bg-pink-600 text-white p-5 rounded-lg h-15 w-[359px] justify-between">
-            <h2>Bag</h2>
-            <img src="./images/categories/bag.png" alt="bag image" />
-          </div>
-          <div class="flex bg-blue-600 text-white p-5 rounded-lg h-15 w-[359px] justify-between">
-            <h2>Shoes</h2>
-            <img src="./images/categories/shoes.png" alt="shoesimage" />
-          </div>
-        </div>
-      </section>
-    </main>
   </body>
 </html>
