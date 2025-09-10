@@ -39,7 +39,9 @@
   <!-- Body Start -->
   <body class="inter-font">
     <header class="md:w-10/12 w-11/12 mx-auto mt-5">
-      <nav class="flex justify-between items-center md:bg-gray-100 md:px-6 py-2 rounded-xl">
+      <nav
+        class="flex justify-between items-center md:bg-gray-100 md:px-6 py-2 rounded-xl"
+      >
         <div>
           <img class="w-28 md:w-32" src="images/logo.png" alt="brand-logo" />
         </div>
@@ -65,11 +67,11 @@
         <div class="md:hidden">
           <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
           <button
-            class="btn  "
+            class="btn"
             popovertarget="popover-1"
             style="anchor-name: --anchor-1"
           >
-            <i class="fa-solid fa-bars "></i>
+            <i class="fa-solid fa-bars"></i>
           </button>
           <ul
             class="dropdown dropdown-end menu w-52 rounded-box bg-base-100 shadow-sm"
@@ -84,6 +86,29 @@
           </ul>
         </div>
       </nav>
+      <!-- Hero banner -->
+      <section class="bg-[#feeae9] md:px-8 px-2.5 rounded-xl mx-auto mt-5">
+        <div class="flex items-center md:flex-row flex-col-reverse ">
+          <div>
+            <h1 class="md:text-5xl text-3xl font-semibold mb-4">Mi LED TV 4A PRO 32</h1>
+            <p class="mb-5 md:w-1/2 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <h2 class="text-4xl font-semibold text-pink-500">$1269</h2>
+            <button
+              class="bg-pink-500 px-7 py-3.5 rounded-xl mt-5 text-white font-semibold mb-4 md:mb-0"
+            >
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="py-8 pl-3 md:pl-0">
+            <img src="./images/banner-images/tv.png" alt="banner image" />
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
